@@ -27,9 +27,9 @@ import bgcount from '../../assets/imgs/carousil/slide1.png'
     <div className="w-full flex flex-col justify-center items-center pb-28 px-4">
 
       <div className="flex flex-col w-full max-w-screen-lg bg-primary rounded-xl px-10">
-        <div className="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 ">
+        <div className="grid shadow-2xl shadow-black lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-1 gap-4 ">
           {counters.map((item , index)=>(
-            <div key={index} className="relative -top-1/4">
+            <div key={index}  className="  transition-all relative -top-1/4">
             <div className="  shadow-inner w-full h-full text-center bg-white p-5 py-6 rounded-2xl shadow-base flex flex-col gap-3 items-center justify-evenly">
               <img src={item.img} className='w-20' />
               <h1 className="text-primary font-semibold text-xl">
@@ -42,12 +42,12 @@ import bgcount from '../../assets/imgs/carousil/slide1.png'
           </div>
           ))}
         </div>
-        <div className="lg:-mb-20 md:-mb-20 -mb-16 ">
+        {/* <div className="lg:-mb-20 md:-mb-20 -mb-16 ">
           <img
             src={bgcount}
             alt="service image"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   )

@@ -80,11 +80,11 @@ const Carousel = () => {
                   View More
                 </Button>
               </div>
-              <div className="absolute img-cars top-48 right-36 flex flex-row gap-4 lg:flex md:hidden sm:hidden xs:hidden">
+              <div className="absolute img-cars  top-48 right-36 flex flex-row gap-4 lg:flex md:hidden sm:hidden xs:hidden">
                 {slide.rightImages.map((image, imgIndex) => (
                   <div
                     key={imgIndex}
-                    className={`w-52 me-10 h-[280px] rounded-3xl overflow-hidden ${
+                    className={`w-52 border-[3px] border-primary  me-10 h-[280px] rounded-3xl overflow-hidden ${
                       imgIndex === 1 ? "mt-14" : ""
                     }`}
                   >
