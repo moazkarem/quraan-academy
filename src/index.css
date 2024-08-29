@@ -1,0 +1,34 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: "Amaranth", sans-serif; ;
+}
+body{
+  background-color: #fff;
+  /* height: 5000px; */
+}
+.active {
+  color: #fff !important;
+  background-color: #18487078 !important;
+}
+.about-title{
+  font-size: 40px !important;
+}
+.foot-bg{
+  background-image: url('./assets/imgs/carousil/slide1.png');
+  background-size: cover;
+  background-color: #660000 !important;
+}
+
+/*===========================   HEADER =============*/
+@media (max-width: 639px){                                          
+  .head-links{
+  display: none;
+
+  }
+}
