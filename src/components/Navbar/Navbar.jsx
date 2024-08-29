@@ -105,10 +105,13 @@ const Navbar = () => {
           </div>
           <div className="flex-none">
             <Button
-              style={`text-white ${scrollY>300 ? 'bg-[#444444]' :'bg-primary' } btn-sm rounded-3xl btn text-lg px-6 max-sm:px-4 max-sm:text-[14px] hover:bg-primary`}
+              style={`text-white ${scrollY>300 ? 'bg-[#ffb921]' :'bg-primary' } btn-sm rounded-3xl btn text-lg px-6 max-sm:px-4 max-sm:text-[14px] hover:bg-primary`}
             >
              Join us
             </Button>
+
+
+            
           </div>
         </div>
 
