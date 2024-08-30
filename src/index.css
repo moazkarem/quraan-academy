@@ -12,7 +12,7 @@ body {
   background-color: #fff;
   /* height: 5000px; */
 }
-input , textarea{
+input , textarea , select{
   background-color: #F3F3F3;
 }
 .active {

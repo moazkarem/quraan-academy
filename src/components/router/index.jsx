@@ -7,6 +7,7 @@ import RootLayout from "../../pages/Layout/Layout";
 import Home from "../../pages/HomePage/Home";
 import AboutPage from "../../pages/Aboutpage/AboutPage";
 import ContactPage from "../../pages/Contactpage/ContactPage";
+import Joinpage from "../../pages/Joinpage/Joinpage";
 
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -14,6 +15,7 @@ import ContactPage from "../../pages/Contactpage/ContactPage";
             <Route index element={<Home />}  />
             <Route path="about" element={<AboutPage />}  />
             <Route path="contact" element={<ContactPage />}  />
+            <Route path="joinus" element={<Joinpage />}  />
         </Route>
     )
 

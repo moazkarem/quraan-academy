@@ -1,9 +1,10 @@
 import { useState, useEffect } from "react";
 import Drawer from "../Drawer/Drawer";
 import Button from "../../Ui/Button";
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import logo from '../../assets/imgs/logo/logo2.jpg'
 const Navbar = () => {
+  const navigate = useNavigate()
   const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
 
@@ -12,6 +13,7 @@ const Navbar = () => {
   };
 
   const handleScroll = () => {
+   
     const position = window.scrollY;
     setScrollY(position);
   };
@@ -105,6 +107,7 @@ const Navbar = () => {
           </div>
           <div className="flex-none">
             <Button
+            onClick={()=>navigate('/joinus')}
               style={`text-white ${scrollY>300 ? 'bg-[#ffb921]' :'bg-primary' } btn-sm rounded-3xl btn text-lg px-6 max-sm:px-4 max-sm:text-[14px] hover:bg-primary`}
             >
              Join us
