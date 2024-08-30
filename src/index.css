@@ -12,6 +12,9 @@ body {
   background-color: #fff;
   /* height: 5000px; */
 }
+input , textarea{
+  background-color: #F3F3F3;
+}
 .active {
   color: #fff !important;
   background-color: #18487078 !important;

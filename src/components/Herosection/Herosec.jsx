@@ -40,7 +40,7 @@ const Herosec = ({bg , title}) => {
             </li>
             <li className="flex items-center">
               <span className="mx-2">/</span>
-              <span className="text-[#ffb921]">About Us</span>
+              <span className="text-[#ffb921]">{title}</span>
             </li>
           </ol>
         </div>
