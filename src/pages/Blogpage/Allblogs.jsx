@@ -8,8 +8,8 @@ import art5 from '../../assets/imgs/articles/art5.jfif';
 import art6 from '../../assets/imgs/articles/art6.jfif';
 import Title from "../../components/Titlesections/Title";
 
-const Allcourses = () => {
-    const courses = [
+const AllBlogs = () => {
+    const blogs = [
         { img: art1, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
         { img: art2, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
         { img: art3, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
@@ -29,17 +29,17 @@ const Allcourses = () => {
 
     const indexOfLastCourse = currentPage * coursesPerPage;
     const indexOfFirstCourse = indexOfLastCourse - coursesPerPage;
-    const currentCourses = courses.slice(indexOfFirstCourse, indexOfLastCourse);
+    const currentCourses = blogs.slice(indexOfFirstCourse, indexOfLastCourse);
 
     const pageNumbers = [];
-    for (let i = 1; i <= Math.ceil(courses.length / coursesPerPage); i++) {
+    for (let i = 1; i <= Math.ceil(blogs.length / coursesPerPage); i++) {
         pageNumbers.push(i);
     }
 
     return (
         <div className="flex flex-col items-center justify-start pb-20 max-sm:mt-12 px-4 sm:mt-12 xl:mt-28">
             <div className="flex text-start justify-start max-sm:mb-8 sm:mb-3 md:mb-8 lg:mb-16">
-                <Title name={'Check All Courses Here'} />
+                <Title name={'Check Our Blogs Here'} />
             </div>
             <div className="grid max-w-screen-lg w-full lg:text-lg gap-7 max-sm:grid-cols-1 max-sm:gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 2xl:grid-cols-4 mb-20">
                 {currentCourses.map((item, index) => (
@@ -81,4 +81,4 @@ const Allcourses = () => {
     );
 }
 
-export default Allcourses;
+export default AllBlogs;
