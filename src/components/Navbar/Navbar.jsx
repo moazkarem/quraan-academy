@@ -71,7 +71,7 @@ const Navbar = () => {
               </li>
               <li className="text-lg p-2">
                 <NavLink
-                  to="/shop"
+                  to="/about"
                   className="text-white hover:text-[#ffb921] hover:bg-transparent font-bold"
                 >
                   About
@@ -87,7 +87,7 @@ const Navbar = () => {
               </li>
               <li className="text-lg p-2">
                 <NavLink
-                  to="/about"
+                  to="/blog"
                   className="text-white hover:text-[#ffb921] hover:bg-transparent font-bold"
                 >
                   Blog
@@ -111,7 +111,7 @@ const Navbar = () => {
             </Button>
 
 
-            
+
           </div>
         </div>
 

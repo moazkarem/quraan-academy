@@ -4,7 +4,7 @@ import ArticlesSec from "./ArticlesSec"
 import ChoseourSec from "./ChoseourSec"
 import  CountersSec  from "./CountersSec"
 import Courses from "./Courses"
-
+import Footer from "../../components/Footer/Footer"
 
 const Home = () => {
   return (
@@ -15,6 +15,7 @@ const Home = () => {
       <ChoseourSec />
       <Courses />
       <ArticlesSec />
+      <Footer />
     </div>
   )
 }
