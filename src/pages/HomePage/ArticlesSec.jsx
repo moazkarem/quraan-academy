@@ -5,6 +5,7 @@ import art3 from '../../assets/imgs/articles/art3.jfif'
 import art4 from '../../assets/imgs/articles/art4.jfif'
 import art5 from '../../assets/imgs/articles/art5.jfif'
 import art6 from '../../assets/imgs/articles/art6.jfif'
+import Title from "../../components/Titlesections/Title";
 const ArticlesSec = () => {
   const articles = [
     {
@@ -46,6 +47,9 @@ const ArticlesSec = () => {
   ]
   return (
     <div className="flex flex-col items-center justify-start pb-20 max-sm:mt-12 px-4 sm:mt-12 xl:mt-28 ">
+      <div className="flex text-start justify-start max-sm:mb-8 sm:mb-3 md:mb-8 lg:mb-16">
+            <Title name={'Some Blogs'} />
+          </div>
       <div className="grid max-w-screen-lg w-full lg:text-lg gap-7 max-sm:grid-cols-1 max-sm:gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 2xl:grid-cols-4 mb-20">
        {articles.map((item , index)=>(
          <div key={index} className=" h-[400px]">

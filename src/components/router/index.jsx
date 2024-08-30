@@ -8,6 +8,7 @@ import Home from "../../pages/HomePage/Home";
 import AboutPage from "../../pages/Aboutpage/AboutPage";
 import ContactPage from "../../pages/Contactpage/ContactPage";
 import Joinpage from "../../pages/Joinpage/Joinpage";
+import Coursespage from "../../pages/Courses/Coursespage";
 
   const router = createBrowserRouter(
     createRoutesFromElements(
@@ -16,6 +17,7 @@ import Joinpage from "../../pages/Joinpage/Joinpage";
             <Route path="about" element={<AboutPage />}  />
             <Route path="contact" element={<ContactPage />}  />
             <Route path="joinus" element={<Joinpage />}  />
+            <Route path="courses" element={<Coursespage />}  />
         </Route>
     )
 
