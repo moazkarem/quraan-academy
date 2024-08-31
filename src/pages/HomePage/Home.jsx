@@ -3,7 +3,7 @@ import AboutSec from "./AboutSec"
 import ArticlesSec from "./ArticlesSec"
 import ChoseourSec from "./ChoseourSec"
 import  CountersSec  from "./CountersSec"
-import Courses from "./Courses"
+import CoursesHomesec from "./CoursesHomesec"
 import Footer from "../../components/Footer/Footer"
 
 const Home = () => {
@@ -13,7 +13,7 @@ const Home = () => {
       <AboutSec />
       <CountersSec />
       <ChoseourSec />
-      <Courses />
+      <CoursesHomesec />
       <ArticlesSec />
       <Footer />
     </div>

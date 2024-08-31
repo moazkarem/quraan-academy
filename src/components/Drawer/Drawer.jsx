@@ -44,7 +44,7 @@ const Drawer = ({ isDrawerOpen, setIsDrawerOpen, toggleDrawer }) => {
           className="drawer-overlay"
         ></label>
 
-        <ul className="menu menu-vertical bg-[#133A5E]  p-4 w-80 fixed h-full ">
+        <ul className="menu menu-vertical bg-primary  p-4 w-80 fixed h-full ">
           <li className="text-center ">
             <div className=" flex items-center flex-1 lg:flex-none text-center lg:text-left">
               <img
@@ -64,18 +64,18 @@ const Drawer = ({ isDrawerOpen, setIsDrawerOpen, toggleDrawer }) => {
             </NavLink>
           </li>
           <li className="text-lg p-2">
-            <NavLink to="/shop" className="text-white hover:text-[#ffb921] ">
-              Shop
-            </NavLink>
-          </li>
-          <li className="text-lg p-2">
-            <NavLink to="/blog" className="text-white hover:text-[#ffb921] ">
-              Blog
-            </NavLink>
-          </li>
-          <li className="text-lg p-2">
             <NavLink to="/about" className="text-white hover:text-[#ffb921] ">
               About
+            </NavLink>
+          </li>
+          <li className="text-lg p-2">
+            <NavLink to="/courses" className="text-white hover:text-[#ffb921] ">
+              Our Courses
+            </NavLink>
+          </li>
+          <li className="text-lg p-2">
+            <NavLink to="/blogs" className="text-white hover:text-[#ffb921] ">
+              Blog
             </NavLink>
           </li>
           <li className="text-lg p-2">

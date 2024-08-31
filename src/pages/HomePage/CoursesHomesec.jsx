@@ -3,7 +3,7 @@ import Title from "../../components/Titlesections/Title";
 import img1 from "../../assets/imgs/courses/course1.png";
 import img2 from "../../assets/imgs/courses/course2.png";
 import img3 from "../../assets/imgs/courses/course3.png";
-const Courses = () => {
+const CoursesHomesec = () => {
   const courses = [
     {
       img: img1,
@@ -109,4 +109,4 @@ const Courses = () => {
   );
 };
 
-export default Courses;
+export default CoursesHomesec;

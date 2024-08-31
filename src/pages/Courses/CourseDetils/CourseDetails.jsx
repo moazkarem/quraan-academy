@@ -19,7 +19,7 @@ const CourseDetails = () => {
   }
 
   return (
-    <div className="flex flex-col items-center justify-start pb-20 max-sm:mt-12 px-4 sm:mt-12 xl:mt-28">
+    <div className="flex flex-col items-center justify-start pb-12 max-sm:mt-12 px-4 sm:mt-12 xl:mt-28">
       <div className="flex text-start justify-start max-sm:mb-8 sm:mb-3 md:mb-8 lg:mb-16">
         <Title name={"Single Details"} />
       </div>
@@ -56,6 +56,7 @@ const CourseDetails = () => {
         </div>
 
       </div>
+    
     </div>
   );
 };
