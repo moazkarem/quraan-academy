@@ -20,10 +20,10 @@ const CourseDetails = () => {
 
   return (
     <div className="flex flex-col items-center justify-start pb-20 max-sm:mt-12 px-4 sm:mt-12 xl:mt-28">
-      <div className="flex text-start justify-start max-sm:mb-8 sm:mb-3 md:mb-8 lg:mb-10">
+      <div className="flex text-start justify-start max-sm:mb-8 sm:mb-3 md:mb-8 lg:mb-16">
         <Title name={"Single Details"} />
       </div>
-      <div className="container flex flex-col lg:flex-row gap-6 lg:gap-12">
+      <div className="container flex flex-col lg:flex-row md:flex-row md gap-6 lg:gap-12">
         {/* Large Image */}
         <div className="flex justify-center items-center flex-col lg:w-1/2">
           <img
@@ -31,7 +31,7 @@ const CourseDetails = () => {
             className="w-3/4  h-[300px] object-cover rounded-lg mb-4"
             alt={course.title}
           />
-          <div className="flex overflow-x-auto justify-center gap-2">
+          <div className="flex flex-wrap justify-center gap-2">
             {course.thumb.map((img, idx) => (
               <img
                 key={idx}
@@ -44,6 +44,17 @@ const CourseDetails = () => {
             ))}
           </div>
         </div>
+
+        <div className="w-1/2 max-sm:w-10/12 sm:w-10/12 md:w-1/2 ">
+          <h6 className="text-primary font-bold  about-title max-sm:text-center max-sm:text-2xl uppercase sm:text-center md:text-xl my-4 md:mb-6 md:text-start">
+            {course.title}
+          </h6>
+          <p className="text-gray-500 font-inter leading-5 max-sm:text-center max-sm:text-base sm:text-center sm:text-lg  md:leading-7 text-sm md:text-lg md:text-start">
+            {course.desc}
+          </p>
+         
+        </div>
+
       </div>
     </div>
   );

@@ -10,7 +10,13 @@ export const coursesData = [
     img: art1,
     date: "June 6, 2024",
     title: "Online hifz Classes",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor",
+    desc: ` Quran Academy aims to learn the Quran, and Arabic language and
+            understand the Sunnah of our prophet Muhammad peace be upon him to
+            all Muslims in the world. We aim to create a professional learning
+            environment and make the learning process interesting and enjoyable.
+            We provide the students with the best learning experience that grows
+            their love of learning the Holy Quran, Arabic Language, and Islamic
+            Studies. We have special professional courses for our students.`,
     thumb:[
       art1, art2, art3, art4, art5, art6
     ]
@@ -20,7 +26,13 @@ export const coursesData = [
     img: art2,
     date: "June 6, 2024",
     title: "Online hifz Classes",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor",
+    desc: ` Quran Academy aims to learn the Quran, and Arabic language and
+            understand the Sunnah of our prophet Muhammad peace be upon him to
+            all Muslims in the world. We aim to create a professional learning
+            environment and make the learning process interesting and enjoyable.
+            We provide the students with the best learning experience that grows
+            their love of learning the Holy Quran, Arabic Language, and Islamic
+            Studies. We have special professional courses for our students.`,
     thumb:[
       art1, art2, art3, art4, art5, art6
     ]
@@ -30,7 +42,13 @@ export const coursesData = [
     img: art3,
     date: "June 6, 2024",
     title: "Online hifz Classes",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor",
+    desc: ` Quran Academy aims to learn the Quran, and Arabic language and
+            understand the Sunnah of our prophet Muhammad peace be upon him to
+            all Muslims in the world. We aim to create a professional learning
+            environment and make the learning process interesting and enjoyable.
+            We provide the students with the best learning experience that grows
+            their love of learning the Holy Quran, Arabic Language, and Islamic
+            Studies. We have special professional courses for our students.`,
     thumb:[
       art1, art2, art3, art4, art5, art6
     ]
@@ -40,7 +58,13 @@ export const coursesData = [
     img: art4,
     date: "June 6, 2024",
     title: "Online hifz Classes",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor",
+    desc: ` Quran Academy aims to learn the Quran, and Arabic language and
+            understand the Sunnah of our prophet Muhammad peace be upon him to
+            all Muslims in the world. We aim to create a professional learning
+            environment and make the learning process interesting and enjoyable.
+            We provide the students with the best learning experience that grows
+            their love of learning the Holy Quran, Arabic Language, and Islamic
+            Studies. We have special professional courses for our students.`,
     thumb:[
       art1, art2, art3, art4, art5, art6
     ]
@@ -50,7 +74,13 @@ export const coursesData = [
     img: art5,
     date: "June 6, 2024",
     title: "Online hifz Classes",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor",
+    desc: ` Quran Academy aims to learn the Quran, and Arabic language and
+            understand the Sunnah of our prophet Muhammad peace be upon him to
+            all Muslims in the world. We aim to create a professional learning
+            environment and make the learning process interesting and enjoyable.
+            We provide the students with the best learning experience that grows
+            their love of learning the Holy Quran, Arabic Language, and Islamic
+            Studies. We have special professional courses for our students.`,
     thumb:[
       art1, art2, art3, art4, art5
     ]
@@ -60,7 +90,13 @@ export const coursesData = [
     img: art6,
     date: "June 6, 2024",
     title: "Online hifz Classes",
-    desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor",
+    desc: ` Quran Academy aims to learn the Quran, and Arabic language and
+            understand the Sunnah of our prophet Muhammad peace be upon him to
+            all Muslims in the world. We aim to create a professional learning
+            environment and make the learning process interesting and enjoyable.
+            We provide the students with the best learning experience that grows
+            their love of learning the Holy Quran, Arabic Language, and Islamic
+            Studies. We have special professional courses for our students.`,
     thumb:[
       art1, art2, art3, art4, art5, art6
     ]

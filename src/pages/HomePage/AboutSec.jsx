@@ -11,7 +11,7 @@ const AboutSec = () => {
         </div>
 
         <div className="w-1/2 max-sm:w-10/12 sm:w-10/12 md:w-1/2 ">
-          {/* <h1 className="text-[#444444] ml-10  font-bold text-[20px]">About Us</h1> */}
+        
           <h6 className="text-primary font-bold  about-title max-sm:text-center max-sm:text-2xl uppercase sm:text-center md:text-xl my-4 md:mb-6 md:text-start">
             About the academy
           </h6>
