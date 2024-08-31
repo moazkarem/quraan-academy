@@ -10,7 +10,8 @@ import ContactPage from "../../pages/Contactpage/ContactPage";
 import Joinpage from "../../pages/Joinpage/Joinpage";
 import Coursespage from "../../pages/Courses/Coursespage";
 import Blogpage from '../../pages/Blogpage/Blogpage'
-import ContentDetails from '../../pages/Courses/CourseDetils/ContentDetails'
+import CourseDetails from '../../pages/Courses/CourseDetils/CourseDetails'
+import BlogDetails from "../../pages/Blogpage/Blogdetails/BlogDetails";
   const router = createBrowserRouter(
     createRoutesFromElements(
         <Route path="/" element={<RootLayout />}  >
@@ -19,8 +20,10 @@ import ContentDetails from '../../pages/Courses/CourseDetils/ContentDetails'
             <Route path="contact" element={<ContactPage />}  />
             <Route path="joinus" element={<Joinpage />}  />
             <Route path="courses" element={<Coursespage />}  />
-            <Route path="/course/:id" element={<ContentDetails />} />
+            <Route path="/course/:id" element={<CourseDetails />} />
             <Route path="blogs" element={<Blogpage />}  />
+            <Route path="/blogs/:id" element={<BlogDetails />} />
+
         </Route>
     )
 

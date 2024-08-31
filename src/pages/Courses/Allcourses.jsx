@@ -60,7 +60,7 @@ const Allcourses = () => {
                             <div className="mt-2 pl-2">
                                 <p className="text-[#ffb921]">{item.date}</p>
                                 <span className="text-primary font-bold text-2xl">{item.title}</span>
-                                <p>{item.desc}</p>
+                                <p className='line-clamp-3'>{item.desc}</p>
                                 <button
                                     className="btn-sm rounded-lg bg-primary text-white mt-2"
                                     onClick={() => handleMoreDetails(item.id)}

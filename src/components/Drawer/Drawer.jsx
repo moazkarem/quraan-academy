@@ -75,7 +75,7 @@ const Drawer = ({ isDrawerOpen, setIsDrawerOpen, toggleDrawer }) => {
           </li>
           <li className="text-lg p-2">
             <NavLink to="/blogs" className="text-white hover:text-[#ffb921] ">
-              Blog
+              Blogs
             </NavLink>
           </li>
           <li className="text-lg p-2">

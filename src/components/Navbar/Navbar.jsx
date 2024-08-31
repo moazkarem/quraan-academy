@@ -92,7 +92,7 @@ const Navbar = () => {
                   to="/blogs"
                   className="text-white hover:text-[#ffb921] hover:bg-transparent font-bold"
                 >
-                  Blog
+                  Blogs
                 </NavLink>
               </li>
               <li className="text-lg p-2">

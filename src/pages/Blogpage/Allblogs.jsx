@@ -1,41 +1,25 @@
 import { useState } from 'react';
-// import Button from '../../Ui/Button';
-import art1 from '../../assets/imgs/articles/art1.jfif';
-import art2 from '../../assets/imgs/articles/art2.jfif';
-import art3 from '../../assets/imgs/articles/art3.jfif';
-import art4 from '../../assets/imgs/articles/art4.jfif';
-import art5 from '../../assets/imgs/articles/art5.jfif';
-import art6 from '../../assets/imgs/articles/art6.jpg';
 import Title from "../../components/Titlesections/Title";
-
+import { useNavigate } from 'react-router-dom';
+import {blogsData} from './Data'
 const AllBlogs = () => {
-    const blogs = [
-        { img: art1, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art2, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art3, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art4, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art5, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art6, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art1, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art2, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art3, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art4, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art5, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art6, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-    ];
+    const navigate = useNavigate();
+   
 
     const [currentPage, setCurrentPage] = useState(1);
     const coursesPerPage = 5;
 
     const indexOfLastCourse = currentPage * coursesPerPage;
     const indexOfFirstCourse = indexOfLastCourse - coursesPerPage;
-    const currentCourses = blogs.slice(indexOfFirstCourse, indexOfLastCourse);
+    const currentCourses = blogsData.slice(indexOfFirstCourse, indexOfLastCourse);
 
     const pageNumbers = [];
-    for (let i = 1; i <= Math.ceil(blogs.length / coursesPerPage); i++) {
+    for (let i = 1; i <= Math.ceil(blogsData.length / coursesPerPage); i++) {
         pageNumbers.push(i);
     }
-
+    const handleMoreDetails = (id) => {
+        navigate(`/blogs/${id}`);
+    };
     return (
         <div className="flex flex-col items-center justify-start pb-20 max-sm:mt-12 px-4 sm:mt-12 xl:mt-28">
             <div className="flex text-start justify-start max-sm:mb-8 sm:mb-3 md:mb-8 lg:mb-16">
@@ -43,7 +27,7 @@ const AllBlogs = () => {
             </div>
             <div className="grid max-w-screen-lg w-full lg:text-lg gap-7 max-sm:grid-cols-1 max-sm:gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 2xl:grid-cols-4 mb-20">
                 {currentCourses.map((item, index) => (
-                    <div key={index} className="h-[400px]">
+                    <div key={index} className="h-[400px] mb-14">
                         <div className="w-8/9 bg-transparent m-0 group cursor-pointer h-60 max-sm:h-48 mb-16 max-sm:mb-28 relative">
                             <figure className="overflow-hidden rounded-xl h-full w-full">
                                 <img
@@ -60,7 +44,13 @@ const AllBlogs = () => {
                             <div className="mt-2 pl-2">
                                 <p className="text-[#ffb921]">{item.date}</p>
                                 <span className="text-primary font-bold text-2xl">{item.title}</span>
-                                <p>{item.desc}</p>
+                                <p className='line-clamp-3 '>{item.desc}</p>
+                                <button
+                                    className="btn-sm rounded-lg bg-primary text-white mt-2"
+                                    onClick={() => handleMoreDetails(item.id)}
+                                >
+                                    More Details
+                                </button>
                             </div>
                         </div>
                     </div>
