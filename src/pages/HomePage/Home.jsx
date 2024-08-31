@@ -5,6 +5,7 @@ import ChoseourSec from "./ChoseourSec"
 import  CountersSec  from "./CountersSec"
 import CoursesHomesec from "./CoursesHomesec"
 import Footer from "../../components/Footer/Footer"
+import Testimonials from "./Testmonials"
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <CountersSec />
       <ChoseourSec />
       <CoursesHomesec />
+      <Testimonials />
       <ArticlesSec />
       <Footer />
     </div>
