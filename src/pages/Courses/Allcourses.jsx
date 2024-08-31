@@ -1,27 +1,23 @@
 import { useState } from 'react';
-// import Button from '../../Ui/Button';
+import { useNavigate } from 'react-router-dom';
 import art1 from '../../assets/imgs/articles/art1.jfif';
 import art2 from '../../assets/imgs/articles/art2.jfif';
 import art3 from '../../assets/imgs/articles/art3.jfif';
 import art4 from '../../assets/imgs/articles/art4.jfif';
 import art5 from '../../assets/imgs/articles/art5.jfif';
-import art6 from '../../assets/imgs/articles/art6.jfif';
+import art6 from '../../assets/imgs/articles/art6.jpg';
 import Title from "../../components/Titlesections/Title";
 
 const Allcourses = () => {
+    const navigate = useNavigate();
     const courses = [
-        { img: art1, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art2, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art3, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art4, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art5, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art6, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art1, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art2, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art3, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art4, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art5, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
-        { img: art6, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
+        { id: 1, img: art1, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
+        { id: 2, img: art2, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
+        { id: 3, img: art3, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
+        { id: 4, img: art4, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
+        { id: 5, img: art5, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
+        { id: 6, img: art6, date: 'June 6, 2024', title: 'Online hifz Classes', desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor' },
+        // Add more courses if needed
     ];
 
     const [currentPage, setCurrentPage] = useState(1);
@@ -36,14 +32,18 @@ const Allcourses = () => {
         pageNumbers.push(i);
     }
 
+    const handleMoreDetails = (id) => {
+        navigate(`/course/${id}`);
+    };
+
     return (
         <div className="flex flex-col items-center justify-start pb-20 max-sm:mt-12 px-4 sm:mt-12 xl:mt-28">
             <div className="flex text-start justify-start max-sm:mb-8 sm:mb-3 md:mb-8 lg:mb-16">
                 <Title name={'Check All Courses Here'} />
             </div>
             <div className="grid max-w-screen-lg w-full lg:text-lg gap-7 max-sm:grid-cols-1 max-sm:gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 2xl:grid-cols-4 mb-20">
-                {currentCourses.map((item, index) => (
-                    <div key={index} className="h-[400px]">
+                {currentCourses.map((item) => (
+                    <div key={item.id} className="h-[400px] mb-14">
                         <div className="w-8/9 bg-transparent m-0 group cursor-pointer h-60 max-sm:h-48 mb-16 max-sm:mb-28 relative">
                             <figure className="overflow-hidden rounded-xl h-full w-full">
                                 <img
@@ -61,6 +61,12 @@ const Allcourses = () => {
                                 <p className="text-[#ffb921]">{item.date}</p>
                                 <span className="text-primary font-bold text-2xl">{item.title}</span>
                                 <p>{item.desc}</p>
+                                <button
+                                    className="btn-sm rounded-lg bg-primary text-white mt-2"
+                                    onClick={() => handleMoreDetails(item.id)}
+                                >
+                                    More Details
+                                </button>
                             </div>
                         </div>
                     </div>

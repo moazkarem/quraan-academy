@@ -5,7 +5,7 @@ import art2 from '../../assets/imgs/articles/art2.jfif';
 import art3 from '../../assets/imgs/articles/art3.jfif';
 import art4 from '../../assets/imgs/articles/art4.jfif';
 import art5 from '../../assets/imgs/articles/art5.jfif';
-import art6 from '../../assets/imgs/articles/art6.jfif';
+import art6 from '../../assets/imgs/articles/art6.jpg';
 import Title from "../../components/Titlesections/Title";
 
 const AllBlogs = () => {
