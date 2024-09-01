@@ -54,7 +54,18 @@ const Formsec = () => {
                 Send Message
               </button>
             </form>
+            
           </div>
+      
+        </div>
+        <div className="mt-10">
+        <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d610.732517701552!2d31.176533241156996!3d30.01318558976228!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584683f68e2529%3A0x8bcd34391e0ff03f!2z2KfZhNmB2LHYs9in2YYgKDEp!5e0!3m2!1sar!2seg!4v1639144091998!5m2!1sar!2seg"
+      className="w-full h-[600px] border-2 rounded-md border-primary"
+  
+      allowFullScreen=""
+      loading="lazy"
+    ></iframe>
         </div>
       </div>
     </div>

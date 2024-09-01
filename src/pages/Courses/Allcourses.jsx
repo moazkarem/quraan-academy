@@ -41,9 +41,9 @@ const Allcourses = () => {
             <div className="flex text-start justify-start max-sm:mb-8 sm:mb-3 md:mb-8 lg:mb-16">
                 <Title name={'Check All Courses Here'} />
             </div>
-            <div className="grid max-w-screen-lg w-full lg:text-lg gap-7 max-sm:grid-cols-1 max-sm:gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 2xl:grid-cols-4 mb-20">
+            <div className=" grid max-w-screen-lg w-full lg:text-lg gap-7 max-sm:grid-cols-1 max-sm:gap-3 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 2xl:grid-cols-4 mb-20">
                 {currentCourses.map((item) => (
-                    <div key={item.id} className="h-[400px] mb-14">
+                    <div key={item.id} className="h-[400px] mb-14 ">
                         <div className="w-8/9 bg-transparent m-0 group cursor-pointer h-60 max-sm:h-48 mb-16 max-sm:mb-28 relative">
                             <figure className="overflow-hidden rounded-xl h-full w-full">
                                 <img
