@@ -59,7 +59,7 @@ const Navbar = () => {
               src={logo}
               alt="logo"
             />
-            <h3 className="text-2xl max-sm:text-[16px] text-white font-bold">HADAYA</h3>
+            <h3 className="text-2xl max-sm:hidden max-sm:text-[16px] text-white font-bold">HADAYA</h3>
           </div>
           <div className="head-links flex lg:flex md:hidden sm:hidden flex-1 justify-center space-x-4">
             <ul className="menu menu-horizontal p-0">

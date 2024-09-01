@@ -1,6 +1,6 @@
 
 import Herosec from '../../components/Herosection/Herosec'
-import bg from '../../assets/imgs/contactpage/bg.jpg'
+import bg from '../../assets/imgs/contactpage/bg.png'
 import Formsec from './Formsec'
 import Footer from '../../components/Footer/Footer'
 const ContactPage = () => {

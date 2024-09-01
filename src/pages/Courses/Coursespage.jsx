@@ -1,4 +1,4 @@
-import bg from '../../assets/imgs/About page/about.jfif'
+import bg from '../../assets/imgs/coursespage/bg-course-page.png'
 import Herosec from '../../components/Herosection/Herosec'
 import Allcourses from './Allcourses'
 import Footer from '../../components/Footer/Footer'

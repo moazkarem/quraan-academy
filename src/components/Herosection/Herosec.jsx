@@ -4,9 +4,10 @@ const Herosec = ({bg , title}) => {
   return (
     <div>
     <div className="relative">
+    <div className="absolute inset-0 bg-black opacity-50"></div>
       <img
         src={bg}
-        className="w-full h-[60vh] lg:h-[50vh]"
+        className="w-full h-[60vh] lg:h-[60vh]"
         alt="hero about section"
         style={{ opacity: 1 }}
       />

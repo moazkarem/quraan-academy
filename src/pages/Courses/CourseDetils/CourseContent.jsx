@@ -36,7 +36,7 @@ const CourseContent = () => {
               <img
                 key={idx}
                 src={img}
-                className="w-[70px] h-[70px] border-2 p-[2px] border-primary  object-cover rounded-full cursor-pointer"
+                className={`w-[70px] h-[70px] border-2 p-[2px] border-primary  object-cover rounded-full cursor-pointer`}
                 alt={`Thumbnail ${idx + 1}`}
                 onClick={(e) => setActive(+e.target.dataset.index)}
                 data-index={idx}

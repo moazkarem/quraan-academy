@@ -4,7 +4,7 @@ import AboutSec from "../HomePage/AboutSec"
 import ChoseourSec from "../HomePage/ChoseourSec"
 import CountersSec from "../HomePage/CountersSec"
 import Missionsec from "./Missionsec"
-import aboutbg from '../../assets/imgs/About page/about.jfif'
+import aboutbg from '../../assets/imgs/About page/about.jpeg'
 
 const AboutPage = () => {
   return (

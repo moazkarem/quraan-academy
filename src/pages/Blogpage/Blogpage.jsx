@@ -1,4 +1,4 @@
-import bg from '../../assets/imgs/About page/about.jfif'
+import bg from '../../assets/imgs/Blogpage/bg-blog-page.jpg'
 import Herosec from '../../components/Herosection/Herosec'
 import Allblogs from './Allblogs'
 import Footer from '../../components/Footer/Footer'

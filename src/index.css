@@ -34,7 +34,10 @@ input , textarea , select{
     display: none;
   }
 }
-
+.activ-img{
+  opacity: .6 !important;
+  border-color: greenyellow !important;
+}
 ::-webkit-scrollbar {
   width: 13px;
 }

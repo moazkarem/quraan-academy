@@ -18,7 +18,7 @@ import img4 from '../../assets/imgs/carousil/img4.jfif'
 const slidesData = [
   {
     image: slide1,
-    title: "Quran academy",
+    title: "HADAYA ACADEMY",
     description:
    "The best online platform for learning Quran and Arabic language Join us now and start the journey of understanding Quran and sunnah" ,
     rightImages: [
@@ -28,7 +28,7 @@ const slidesData = [
   },
   {
     image: slide2,
-    title: "Quran academy",
+    title: "HADAYA ACADEMY",
     description:
     "The best online platform for learning Quran and Arabic language Join us now and start the journey of understanding Quran and sunnah",
     rightImages: [
@@ -68,7 +68,7 @@ const Carousel = () => {
                 className="w-full h-full object-cover"
               />
               <div className="absolute cars-titles top-0 lg:w-1/4 lg:left-32 flex lg:items-start md:left-2 sm:left-2 sm:w-full sm:items-center xs:w-full xs:items-center flex-col justify-center items-start h-full w-1/4 px-4">
-                <h1 className="text-white pb-10 text-4xl font-bold">
+                <h1 className="text-white pb-8 text-3xl font-bold">
                   {slide.title}
                 </h1>
                 <p className="  md:text-center sm:text-center lg:text-xl lg:text-start lg:w-full w-1/2 md:text-lg text-wrap text-start pb-10 text-xl text-white">

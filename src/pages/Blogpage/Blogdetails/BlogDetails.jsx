@@ -1,5 +1,5 @@
 import Herosec from '../../../components/Herosection/Herosec'
-import bg from '../../../assets/imgs/About page/about.jfif'
+import bg from '../../../assets/imgs/Blogpage/bg-blog-det.jpg'
 import ContentBlogs from './ContentBlogs'
 import BlogOverview from './BlogOverview'
 import Footer from '../../../components/Footer/Footer'

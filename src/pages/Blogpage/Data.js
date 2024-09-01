@@ -89,4 +89,32 @@ export const blogsData = [
             Studies. We have special professional Blogs for our students.`,
     thumb: [art6, art1, art2, art3, art4, art5],
   },
+  {
+    id: 7,
+    img: art6,
+    date: "May 1, 2024",
+    title: "Blog Title",
+    desc: ` Quran Academy aims to learn the Quran, and Arabic language and
+            understand the Sunnah of our prophet Muhammad peace be upon him to
+            all Muslims in the world. We aim to create a professional learning
+            environment and make the learning process interesting and enjoyable.
+            We provide the students with the best learning experience that grows
+            their love of learning the Holy Quran, Arabic Language, and Islamic
+            Studies. We have special professional Blogs for our students.`,
+    thumb: [art6, art1, art2, art3, art4, art5],
+  },
+  {
+    id: 8,
+    img: art6,
+    date: "May 1, 2024",
+    title: "Blog Title",
+    desc: ` Quran Academy aims to learn the Quran, and Arabic language and
+            understand the Sunnah of our prophet Muhammad peace be upon him to
+            all Muslims in the world. We aim to create a professional learning
+            environment and make the learning process interesting and enjoyable.
+            We provide the students with the best learning experience that grows
+            their love of learning the Holy Quran, Arabic Language, and Islamic
+            Studies. We have special professional Blogs for our students.`,
+    thumb: [art6, art1, art2, art3, art4, art5],
+  },
 ];

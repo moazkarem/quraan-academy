@@ -1,6 +1,6 @@
 
 import Herosec from '../../../components/Herosection/Herosec'
-import bg from '../../../assets/imgs/About page/about.jfif'
+import bg from '../../../assets/imgs/coursespage/bg-course-det.png'
 import CourseContent from './CourseContent'
 import CourseOverview from './CourseOverview'
 import Footer from '../../../components/Footer/Footer'

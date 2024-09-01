@@ -6,7 +6,7 @@ const Formsec = () => {
     <div className="flex flex-col items-center justify-start pb-20 max-sm:mt-12 px-4 sm:mt-12 xl:mt-28">
       <div className="container mx-auto px-5  lg:px-[40px] xl:px-[100px] mb-[40px]">
       <div className="flex text-start justify-center  max-sm:mb-8 sm:mb-3 md:mb-8 lg:mb-20">
-            <Title name={'Have Question? Contact Us'} />
+            <Title name={'Have A Question? Contact Us'} />
           </div>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-[30px] lg:gap-[0px]">
           <Lottie
