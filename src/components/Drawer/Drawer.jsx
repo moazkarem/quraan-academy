@@ -1,6 +1,13 @@
 import { useCallback, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
-
+import {
+  FaFacebookF,
+  FaTwitter,
+  FaInstagram,
+  FaWhatsapp,
+  FaPinterestP,
+  
+} from "react-icons/fa6";
 const Drawer = ({ isDrawerOpen, setIsDrawerOpen, toggleDrawer }) => {
   const drawerRef = useRef(null);
 
@@ -82,6 +89,25 @@ const Drawer = ({ isDrawerOpen, setIsDrawerOpen, toggleDrawer }) => {
             <NavLink to="/contact" className="text-white hover:text-[#ffb921] ">
               Contact
             </NavLink>
+          </li>
+          <li>
+          <div className="flex space-x-1">
+                <span className="rounded-md bg-gray-500 bg-opacity-50 text-white py-2 hover:bg-secondary hover:bg-opacity-100 transition duration-700 cursor-pointer group w-10 text-center flex justify-center">
+                  <FaFacebookF />
+                </span>
+                <span className="rounded-md bg-gray-500 bg-opacity-50 text-white py-2 hover:bg-secondary hover:bg-opacity-100 transition duration-700 cursor-pointer group w-10 text-center flex justify-center">
+                  <FaTwitter />
+                </span>
+                <span className="rounded-md bg-gray-500 bg-opacity-50 text-white py-2 hover:bg-secondary hover:bg-opacity-100 transition duration-700 cursor-pointer group w-10 text-center flex justify-center">
+                  <FaInstagram />
+                </span>
+                <span className="rounded-md bg-gray-500 bg-opacity-50 text-white py-2 hover:bg-secondary hover:bg-opacity-100 transition duration-700 cursor-pointer group w-10 text-center flex justify-center">
+                  <FaWhatsapp />
+                </span>
+                <span className="rounded-md bg-gray-500 bg-opacity-50 text-white py-2 hover:bg-secondary hover:bg-opacity-100 transition duration-700 cursor-pointer group w-10 text-center flex justify-center">
+                  <FaPinterestP />
+                </span>
+              </div>
           </li>
         </ul>
       </div>

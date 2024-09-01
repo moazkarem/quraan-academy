@@ -7,6 +7,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Amaranth", sans-serif;
+  scroll-behavior: smooth;
 }
 body {
   background-color: #fff;
@@ -54,4 +55,30 @@ input , textarea , select{
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #cbcbe266;
+}
+
+
+.top-hide{
+  background-color: #ffb921;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: none;
+  padding-bottom: 10px;
+}
+.topShow{
+  background-color: #ffb921;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 4px;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  display: block;
+  padding: 10px;
 }
